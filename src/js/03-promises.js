@@ -23,7 +23,7 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   let sumMin = parseInt(delay.value);
 
-  for (let i = 1; i < quantity.value; i++) {
+  for (let i = 0; i < quantity.value; i++) {
     // createPromise(i + 1, delay + step * i);
     createPromise(i + 1, sumMin)
       .then(({ position, delay }) => {
